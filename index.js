@@ -112,11 +112,11 @@ function updateScore () {
 //when quiz is over this is the html for the page
 function renderResults () {
   if (score >= 8) {
-    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You're on fire!</h3><img src="https://i.imgur.com/OPODnDn.gif" alt="campfire animated icon"/><p>You got ${score} / 10</p><p>You're ready to plan your backpacking trip!</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You're on fire!</h3><img src="https://i.imgur.com/OPODnDn.gif" alt="campfire animated icon"/><p>You got ${score} / 10</p><p>You're ready to plan your long drive trip!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else if (score < 8 && score >= 5) {
-    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>Almost there!</h3><img src="https://i.imgur.com/41Jnnxk.gif" alt="raccoona animated icon"/><p>You got ${score} / 10</p><p>Bone up on your backpacking knowledge a little more and you'll be ready to go!</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>Almost there!</h3><img src="https://i.imgur.com/41Jnnxk.gif" alt="raccoona animated icon"/><p>You got ${score} / 10</p><p>Bone up on your driving knowledge a little more and you'll be ready to go!</p><button class="restartButton">Restart Quiz</button></div>`);
   } else {
-    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You might want to stick with car camping</h3><img src="https://i.imgur.com/iGqoVcM.gif" alt="car animcated icon"/><p>You got ${score} / 10</p><p>With more camping and outdoor experience you'll be able to pass this quiz in no time</p><button class="restartButton">Restart Quiz</button></div>`);
+    $('.questionAnswerForm').html(`<div class="results correctFeedback"><h3>You might want to stick with car driving</h3><img src="https://i.imgur.com/iGqoVcM.gif" alt="car animcated icon"/><p>You got ${score} / 10</p><p>With more short and long driving experience you'll be able to pass this quiz in no time</p><button class="restartButton">Restart Quiz</button></div>`);
   }
 }
 
